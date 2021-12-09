@@ -225,7 +225,7 @@ public class PopulatorShipwreck extends Populator implements CallbackableTemplat
         };
     }
 
-    public static final boolean[] FILTER = new boolean[256];
+    public static final boolean[] FILTER = new boolean[512];
 
     public static void init() {
         FILTER[AIR] = true;
