@@ -16,12 +16,12 @@ public class ShipwreckMapChest extends RandomizableContainer {
         super(Maps.newHashMap(), InventoryType.CHEST.getDefaultSize());
 
         PoolBuilder pool1 = new PoolBuilder()
-                .register(new ItemEntry(Item.MAP, 1)); // 395 exploration_map
+                .register(new ItemEntry(Item.EMPTY_MAP, 1)); // 395 exploration_map
         this.pools.put(pool1.build(), new RollEntry(1, pool1.getTotalWeight()));
 
         PoolBuilder pool2 = new PoolBuilder()
                 .register(new ItemEntry(Item.COMPASS, 1))
-                .register(new ItemEntry(Item.MAP, 1)) // 395
+                .register(new ItemEntry(Item.EMPTY_MAP, 1)) // 395
                 .register(new ItemEntry(Item.CLOCK, 1))
                 .register(new ItemEntry(Item.PAPER, 0, 10, 20))
                 .register(new ItemEntry(Item.FEATHER, 0, 5, 10))
